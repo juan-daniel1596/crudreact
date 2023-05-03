@@ -6,10 +6,10 @@ function App () {
 
 
   return (
-    <main className="bg-zinc-800 text-zinc-100 h-screen">
+    <main className="bg-zinc-200 text-zinc-700 h-screen">
     <div className="container mx-auto">
     <TaskForm/>
-      <TaskList/>
+    <TaskList/>
 
       <h2>Hola Dani</h2>
       

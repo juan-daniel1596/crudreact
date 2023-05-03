@@ -10,14 +10,18 @@ import {TaskContext} from '../context/TaskContext'
     
 
     const handleSumit = (e) => {
-        e.preventDefault();
-        createTask({
-            title,
-            description,
-        });
+      e.preventDefault();
+      createTask({
+          title,
+          description,
+      });
 
-        setTitle('')
-        setDescription('')
+      setTitle('')
+      setDescription('')
+
+      const user = {name: 'Juan', lastname: 'Perez', age: 22, married: true}
+      //        setItem('key', 'dataEnString');
+      sessionStorage.setItem('user2', JSON.stringify(user) );
 
     }
     
@@ -39,6 +43,9 @@ import {TaskContext} from '../context/TaskContext'
 
       <button className="bg-indigo-500 px-3 py-1 text-white">guardar</button>
     </form>
+
+    <pre> {JSON.stringify(JSON.parse(localStorage.getItem('user')), null, 5)} </pre>
+
    </div>
   );
 
