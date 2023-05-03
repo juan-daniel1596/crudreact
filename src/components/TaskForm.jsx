@@ -25,7 +25,7 @@ import {TaskContext} from '../context/TaskContext'
   return (
    <div className="max-w-md mx-auto">
      <form onSubmit= {handleSumit} className="bg-slate-800 p-10 mb-4">
-      <h1 className="text-2x1 font-bold text-white">Crea tu tarea</h1>
+      <h1 className="text-2x1 font-bold text-white">Crea tu tarea by David</h1>
       <input placeholder="Escribe tu tarea"  
       onChange={(e) => setTitle(e.target.value) }
       value={title} className="bg-slate-300 p-3 w-full mb-2"
